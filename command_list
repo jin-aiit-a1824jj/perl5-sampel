@@ -1,1 +1,22 @@
 perl -v
+
+*module install
+https://support.sugutsukaeru.jp/ja/tutorials/installation/6.html
+perl -e 'use LWP::Simple;'
+
+https://metacpan.org/
+
+wget https://cpan.metacpan.org/authors/id/O/OA/OALDERS/libwww-perl-6.46.tar.gz
+tar -zxvf ./libwww-perl-6.46.tar.gz 
+perl Makefile.PL 
+sudo make install
+
+wget https://cpan.metacpan.org/authors/id/E/ET/ETHER/Try-Tiny-0.30.tar.gz
+tar -zxvf ./Try-Tiny-0.30.tar.gz 
+perl Makefile.PL
+sudo make install
+
+wget https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/HTTP-Tiny-0.076.tar.gz
+tar -zxvf ./HTTP-Tiny-0.076.tar.gz 
+perl Makefile.PL
+sudo make install
