@@ -11,6 +11,7 @@ sub main {
   #[ABC] -- list of alternates
   #[A-Za-z_0-9] -- specify alternatives just by listing then.
   #[\=\%] - somply list alternatives. Backslash any character that might have a special meaning in regex
+  #[^0-9T\s] ^ Match anything EXCEPT the specified characters
 
   my $content = "The 39 Steps - a GREAT book - Colurs_15 ==%== ABBCCBBCCABCA";
 
