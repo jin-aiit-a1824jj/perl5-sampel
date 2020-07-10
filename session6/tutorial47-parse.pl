@@ -60,6 +60,9 @@ sub export_from_database {
 
 	print "Exporting ...\n";
 	
+	my $output_file= "output.txt";
+	open OUTPUT, '>'.$output_file or die "Cannot create output file $output_file .\n";
+
 	my $sql = 'select  b.id as band_id, b.name as band_name, a.id as album_id, a.name as album_name, a.position as position ' .
 		'from Bands b join Albums a on a.band_id=b.id';
 	
@@ -81,12 +84,13 @@ sub export_from_database {
 		my $album_name = $row->{"album_name"};
 		my $position = $row->{"position"};
 		
-		print "$band_id, $band_name, $album_id, $album_name, $position\n";
-		
+		print OUTPUT "$band_id, $band_name, $album_id, $album_name, $position\n";
+
 	}
 	
 	$sth->finish();
-		
+	print "Export completed to $output_file\n";
+	close OUTPUT;
 }
 
 sub add_to_database {
