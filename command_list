@@ -30,3 +30,21 @@ wget https://cpan.metacpan.org/authors/id/T/TO/TODDR/XML-Parser-2.46.tar.gz
 tar -zxvf ./XML-Parser-2.46.tar.gz
 perl Makefile.PL
 sudo make install
+
+wget https://cpan.metacpan.org/authors/id/T/TI/TIMB/DBI-1.643.tar.gz
+tar -zxvf ./DBI-1.643.tar.gz
+perl Makefile.PL
+sudo make install
+
+wget https://cpan.metacpan.org/authors/id/M/MA/MATTN/Devel-CheckLib-1.14.tar.gz
+tar -zxvf ./Devel-CheckLib-1.14.tar.gz
+perl Makefile.PL
+sudo make install
+
+wget https://cpan.metacpan.org/authors/id/D/DV/DVEEDEN/DBD-mysql-4.050.tar.gz
+tar -zxvf ./DBD-mysql-4.050.tar.gz
+perl Makefile.PL
+sudo make install
+
+https://metacpan.org/pod/distribution/DBD-mysql/lib/DBD/mysql/INSTALL.pod#Debian-and-Ubuntu
+sudo apt-get install libdbd-mysql-perl

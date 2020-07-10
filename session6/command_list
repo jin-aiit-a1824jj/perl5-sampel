@@ -1,0 +1,8 @@
+sudo mysql -u root < ./band_init.sql
+mysql -u mybanddb -p
+
+SHOW databases;
+use Bands;
+
+SHOW tables;
+DESCRIBE Bands;
