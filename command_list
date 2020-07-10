@@ -20,3 +20,13 @@ wget https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/HTTP-Tiny-0.076.tar.gz
 tar -zxvf ./HTTP-Tiny-0.076.tar.gz 
 perl Makefile.PL
 sudo make install
+
+wget https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-Simple-2.25.tar.gz
+tar -zxvf ./XML-Simple-2.25.tar.gz
+perl Makefile.PL
+sudo make install
+
+wget https://cpan.metacpan.org/authors/id/T/TO/TODDR/XML-Parser-2.46.tar.gz
+tar -zxvf ./XML-Parser-2.46.tar.gz
+perl Makefile.PL
+sudo make install
