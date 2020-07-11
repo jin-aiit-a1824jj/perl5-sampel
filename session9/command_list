@@ -1,0 +1,10 @@
+sudo apt install apache2
+sudo apache2ctl configtest
+
+http://www.yamamo10.jp/yamamoto/comp/home_server/WEB_server3/apache/index.php
+sudo service apache2 restart
+sudo service apache2 start
+sudo service apache2 stop
+
+https://www.server-world.info/query?os=Ubuntu_18.04&p=httpd&f=2
+sudo a2enmod cgid
