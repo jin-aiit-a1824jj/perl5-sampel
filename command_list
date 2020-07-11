@@ -48,3 +48,8 @@ sudo make install
 
 https://metacpan.org/pod/distribution/DBD-mysql/lib/DBD/mysql/INSTALL.pod#Debian-and-Ubuntu
 sudo apt-get install libdbd-mysql-perl
+
+wget https://cpan.metacpan.org/authors/id/L/LE/LEEJO/CGI-4.50.tar.gz
+tar -zxvf ./CGI-4.50.tar.gz
+perl Makefile.PL
+sudo make install
