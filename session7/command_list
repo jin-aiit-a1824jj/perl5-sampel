@@ -1,0 +1,13 @@
+- Running One-Line perl programs
+
+perl -e 'print "Hello World!\n";'
+perl -e 'use LWP::Simple; print get("http://www.example.com");'
+
+- Replacing Text in Files
+perl -p -e 's/bem\b/ZORG/gi' one.txt
+perl -p -e 's/bem\b/ZORG/gi' one.txt > temp.txt
+perl -p -e 's/bem\b/ZORG/gi' *.txt
+cat *.txt | perl -p -e 's/bem\b/ZORG/gi'
+
+- Editing Files in-place
+perl -i.orig -pe 's\bme\b/ZPRG/ig' *.txt
